@@ -8,7 +8,19 @@ export const BaseNode = ({
     children
 }) => {
     return (
-        <div style = {{width: 200, minHeight: 80, border: "1px solid black", padding: 10}}>
+        <div
+            style={{
+                minWidth: 220,
+                minHeight: 120,
+                gap: 8,
+                padding: 12,
+                borderRadius: 10,
+                background: '#ffffff',
+                border: '1px solid #e5e7eb',
+                boxShadow: '0 4px 10px rgba(0,0,0,0.08)',
+                fontFamily: 'sans-serif'
+            }}
+        >
             {/* Left Handles */}
             {inputs.map((input, index) => (
                 <Handle
@@ -21,12 +33,19 @@ export const BaseNode = ({
             ))}
 
             {/* Title */}
-            <div>
-                <strong>{title}</strong>
+            <div style={{ 
+                fontWeight: '600',
+                fontSize: 14,
+                marginBottom: 8,
+                borderBottom: '1px solid #eee',
+                paddingBottom: 4
+                }}
+            >
+                {title}
             </div>
 
             {/* Custom Children */}
-            <div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
                 {children}
             </div>
 

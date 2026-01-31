@@ -75,7 +75,26 @@ making the system scalable and easy to maintain.
 
 ## 🎨 Part 2 --- Styling
 
-(To be completed)
+### Problem
+
+The original UI had minimal styling and inconsistent layout across nodes. Each node defined its own container styles, making global UI improvements difficult and repetitive.
+
+### Approach
+
+Because of the abstraction created in Part-1, styling could be applied centrally inside the "BaseNode" component instead of modifying each node individually.
+
+The following improvements were made:
+
+- Rounded card layout with soft shadows
+- Consistent spacing and typography across all nodes
+- Unified input and select field styling via global CSS
+- Styled draggable toolbar buttons for a modern look
+- Improved React Flow background grid appearance
+- Styled Submit button for UI consistency
+
+### Result
+
+All existing nodes and the five newly created nodes automatically inherited the same clean design without any node-specific styling. This demonstrates the effectiveness of the abstraction created in Part-1.
 
 ------------------------------------------------------------------------
 

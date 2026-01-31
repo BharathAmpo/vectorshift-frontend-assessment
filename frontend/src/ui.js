@@ -115,7 +115,7 @@ export const PipelineUI = () => {
                 snapGrid={[gridSize, gridSize]}
                 connectionLineType='smoothstep'
             >
-                <Background color="#aaa" gap={gridSize} />
+                <Background gap={20} size={1} color="#e2e8f0" />
                 <Controls />
                 <MiniMap />
             </ReactFlow>

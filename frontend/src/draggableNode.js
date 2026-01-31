@@ -13,17 +13,16 @@ export const DraggableNode = ({ type, label }) => {
         className={type}
         onDragStart={(event) => onDragStart(event, type)}
         onDragEnd={(event) => (event.target.style.cursor = 'grab')}
-        style={{ 
-          cursor: 'grab', 
-          minWidth: '80px', 
-          height: '60px',
-          display: 'flex', 
-          alignItems: 'center', 
+        style={{
+          padding: '8px 14px',
           borderRadius: '8px',
-          backgroundColor: '#1C2536',
-          justifyContent: 'center', 
-          flexDirection: 'column'
-        }} 
+          border: 'none',
+          background: '#2563eb',
+          color: 'white',
+          fontWeight: 500,
+          cursor: 'grab',
+          userSelect: 'none'
+        }}
         draggable
       >
           <span style={{ color: '#fff' }}>{label}</span>
