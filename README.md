@@ -53,6 +53,8 @@ large amounts of duplicated layout, handle logic, and styling. Creating
 a new node required copying entire files and modifying small pieces,
 which is not scalable.
 
+Additionally, five new nodes were created to demonstrate that the abstraction supports nodes with different handle combinations and UI structures.
+
 ### Solution
 
 Created a reusable `BaseNode` component that abstracts:
