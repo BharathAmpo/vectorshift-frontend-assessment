@@ -20,7 +20,7 @@ export const TextNode = ({ id, data }) => {
   }, [currText]);
 
   const inputHandles = variables.map((name) => ({
-    id: name
+    id: `var-${name}`
   }));
 
   useLayoutEffect(() => {
