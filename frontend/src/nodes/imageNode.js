@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BaseNode } from './BaseNode';
+import { BaseNode } from './baseNode';
 
 export const ImageNode = ({ id }) => {
   const [image, setImage] = useState(null);

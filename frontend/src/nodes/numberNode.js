@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BaseNode } from './BaseNode';
+import { BaseNode } from './baseNode';
 
 export const NumberNode = ({ id }) => {
   const [number, setNumber] = useState(0);

@@ -1,6 +1,6 @@
 // llmNode.js
 
-import { BaseNode } from './BaseNode';
+import { BaseNode } from './baseNode';
 
 export const LLMNode = ({ id }) => {
   return (

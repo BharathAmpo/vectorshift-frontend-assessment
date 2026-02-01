@@ -1,7 +1,7 @@
 // outputNode.js
 
 import { useState } from 'react';
-import { BaseNode } from './BaseNode';
+import { BaseNode } from './baseNode';
 
 export const OutputNode = ({ id, data }) => {
   const [currName, setCurrName] = useState(data?.outputName || '');
