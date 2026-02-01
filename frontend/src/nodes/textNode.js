@@ -5,6 +5,7 @@ import { BaseNode } from './baseNode';
 
 export const TextNode = ({ id, data }) => {
   const [currText, setCurrText] = useState(data?.text || '');
+  const textareaRef = useRef(null);
 
   const variables = useMemo(() => {
     const regex = /\{\{([a-zA-Z_$][a-zA-Z0-9_$]*)\}\}/g;
@@ -22,7 +23,6 @@ export const TextNode = ({ id, data }) => {
     id: name
   }));
 
-  const textareaRef = useRef(null);
   useLayoutEffect(() => {
     if (!textareaRef.current) return;
 
