@@ -15,6 +15,7 @@ import { BooleanNode } from './nodes/booleanNode';
 import { ImageNode } from './nodes/imageNode';
 import { MathNode } from './nodes/mathNode';
 import { LoggerNode } from './nodes/loggerNode';
+import { SubmitButton } from './submit';
 
 import 'reactflow/dist/style.css';
 
@@ -120,6 +121,7 @@ export const PipelineUI = () => {
                 <MiniMap />
             </ReactFlow>
         </div>
+        <SubmitButton nodes={nodes} edges={edges} />
         </>
     )
 }
